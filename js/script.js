@@ -134,12 +134,7 @@ function openPdf(file) {
     return;
   }
 
-  const fullPath =
-    window.location.origin +
-    window.location.pathname.replace(/\/[^\/]*$/, '/') +
-    encodeURIComponent(file);
-
-  pdfFrame.src = fullPath;
+  pdfFrame.src = file;
 
   pdfFrame.scrollIntoView({
     behavior: 'smooth',
