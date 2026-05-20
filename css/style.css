@@ -435,7 +435,7 @@ textarea { min-height: 150px; resize: vertical; }
 }
 
 .modern-submit-btn:hover {
-  background: #1d4ed8;
+  background: #2563eb;
   transform: translateY(-2px);
 }
 
