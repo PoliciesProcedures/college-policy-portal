@@ -300,3 +300,160 @@ textarea { min-height: 150px; resize: vertical; }
   text-align: center;
   color: #94a3b8;
 }
+/* ========================================
+   MODERN CONTACT PAGE
+======================================== */
+
+.contact-modern {
+  padding: 80px 0;
+}
+
+.contact-layout-modern {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.contact-info-modern,
+.support-form-modern {
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 40px;
+  border: 1px solid #dbe4f0;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.04);
+}
+
+.contact-badge {
+  display: inline-block;
+  background: #e8f0ff;
+  color: #0b3d91;
+  padding: 8px 16px;
+  border-radius: 999px;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+.contact-info-modern h2,
+.support-form-modern h2 {
+  font-size: 48px;
+  line-height: 1.1;
+  margin-bottom: 18px;
+  color: #0f172a;
+}
+
+.contact-intro {
+  color: #64748b;
+  line-height: 1.7;
+  margin-bottom: 32px;
+  font-size: 17px;
+}
+
+.contact-item {
+  display: flex;
+  gap: 18px;
+  margin-bottom: 28px;
+}
+
+.contact-item span {
+  font-size: 24px;
+}
+
+.contact-item strong {
+  display: block;
+  margin-bottom: 4px;
+  color: #0f172a;
+}
+
+.contact-item p {
+  color: #475569;
+  line-height: 1.6;
+}
+
+/* FORM */
+
+.modern-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.modern-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.modern-form input,
+.modern-form textarea,
+.modern-form select {
+  width: 100%;
+  padding: 18px;
+  border-radius: 16px;
+  border: 1px solid #dbe2ea;
+  background: #f8fafc;
+  font-size: 16px;
+  color: #0f172a;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+}
+
+.modern-form textarea {
+  resize: vertical;
+  min-height: 180px;
+}
+
+.modern-form input:focus,
+.modern-form textarea:focus,
+.modern-form select:focus {
+  outline: none;
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 4px rgba(37,99,235,0.1);
+}
+
+.modern-submit-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 18px 24px;
+  border-radius: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.modern-submit-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* MOBILE */
+
+@media (max-width: 900px) {
+
+  .contact-layout-modern {
+    grid-template-columns: 1fr;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-info-modern h2,
+  .support-form-modern h2 {
+    font-size: 36px;
+  }
+
+}
