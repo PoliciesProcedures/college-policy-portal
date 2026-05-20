@@ -128,12 +128,24 @@ function renderDocuments() {
 }
 
 function openPdf(file) {
+
   if (!pdfFrame) {
     window.open(file, '_blank', 'noopener');
     return;
   }
-  pdfFrame.src = file;
-  pdfFrame.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+  const fullPath =
+    window.location.origin +
+    window.location.pathname.replace(/\/[^\/]*$/, '/') +
+    encodeURIComponent(file);
+
+  pdfFrame.src = fullPath;
+
+  pdfFrame.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  });
+
 }
 
 function formatDate(dateString) {
