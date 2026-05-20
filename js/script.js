@@ -83,8 +83,26 @@ const nav = document.querySelector('[data-nav]');
 const themeToggle = document.querySelector('[data-theme-toggle]');
 
 function currentDocs() {
+
   if (pageType === 'All') return documents;
-  return documents.filter(doc => doc.type === pageType);
+
+  if (pageType === 'Policy') {
+    return documents.filter(doc => doc.category === 'Policies');
+  }
+
+  if (pageType === 'Procedure') {
+    return documents.filter(doc => doc.category === 'Procedures');
+  }
+
+  if (pageType === 'Course Document') {
+    return documents.filter(doc => doc.category === 'Course Documents');
+  }
+
+  if (pageType === 'Form') {
+    return documents.filter(doc => doc.category === 'Forms');
+  }
+
+  return documents;
 }
 
 function renderCategories() {
@@ -108,10 +126,10 @@ function renderDocuments() {
       <div>
         <span class="tag">${doc.type}</span>
         <h3>${doc.title}</h3>
-        <p>${doc.description}</p>
+        <p>${doc.description || 'Official college document available for viewing and download.'}</p>
         <div class="doc-meta">
           <span>📁 ${doc.category}</span>
-          <span>🗓 Updated ${formatDate(doc.updated)}</span>
+          <span>📄 PDF Document</span>
         </div>
       </div>
       <div class="doc-actions">
