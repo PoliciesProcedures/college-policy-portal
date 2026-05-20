@@ -1,14 +1,131 @@
 const documents = [
-  { title: 'Student Handbook', type: 'Course Document', category: 'General', file: 'pdfs/student-handbook.pdf', updated: '2026-01-15', description: 'Key information for students about studying, support services and responsibilities.' },
-  { title: 'Academic Integrity Policy', type: 'Policy', category: 'Academic', file: 'pdfs/academic-integrity-policy.pdf', updated: '2026-01-20', description: 'Rules and expectations for academic honesty, plagiarism and assessment conduct.' },
-  { title: 'Complaints and Appeals Policy', type: 'Policy', category: 'Compliance', file: 'pdfs/complaints-appeals-policy.pdf', updated: '2026-02-05', description: 'How students can raise concerns, complaints or appeal decisions.' },
-  { title: 'Privacy Policy', type: 'Policy', category: 'Compliance', file: 'pdfs/privacy-policy.pdf', updated: '2026-02-15', description: 'How personal information is collected, stored, used and protected.' },
-  { title: 'Assessment Procedure', type: 'Procedure', category: 'Academic', file: 'pdfs/assessment-procedure.pdf', updated: '2026-01-30', description: 'Procedure for assessment submission, marking, feedback and resubmission.' },
-  { title: 'Student Support Procedure', type: 'Procedure', category: 'Student Support', file: 'pdfs/student-support-procedure.pdf', updated: '2026-02-10', description: 'Steps for identifying and supporting students who need additional assistance.' },
-  { title: 'BSB Course Outline', type: 'Course Document', category: 'Business', file: 'pdfs/bsb-course-outline.pdf', updated: '2026-03-01', description: 'Example business course outline, units and course requirements.' },
-  { title: 'ICT Course Outline', type: 'Course Document', category: 'Information Technology', file: 'pdfs/ict-course-outline.pdf', updated: '2026-03-01', description: 'Example ICT course outline, units and course requirements.' },
-  { title: 'Change of Details Form', type: 'Form', category: 'Administration', file: 'pdfs/change-of-details-form.pdf', updated: '2026-01-12', description: 'Use this form to update student contact or personal details.' },
-  { title: 'Assessment Extension Form', type: 'Form', category: 'Academic', file: 'pdfs/assessment-extension-form.pdf', updated: '2026-01-12', description: 'Request additional time for an assessment before the due date.' }
+
+  {
+    title: 'Academic Integrity Policy',
+    type: 'Policy',
+    category: 'Policies',
+    file: 'academic-integrity-policy.pdf'
+  },
+
+  {
+    title: 'Assessment Extension Form',
+    type: 'Form',
+    category: 'Forms',
+    file: 'assessment-extension-form.pdf'
+  },
+
+  {
+    title: 'Assessment Procedure',
+    type: 'Procedure',
+    category: 'Procedures',
+    file: 'assessment-procedure.pdf'
+  },
+
+  {
+    title: 'BSB Course Outline',
+    type: 'Course Document',
+    category: 'Courses',
+    file: 'bsb-course-outline.pdf'
+  },
+
+  {
+    title: 'Change of Details Form',
+    type: 'Form',
+    category: 'Forms',
+    file: 'change-of-details-form.pdf'
+  },
+
+  {
+    title: 'Complaints Appeals Policy',
+    type: 'Policy',
+    category: 'Policies',
+    file: 'complaints-appeals-policy.pdf'
+  },
+
+  {
+    title: 'CINC Procedure',
+    type: 'Procedure',
+    category: 'Procedures',
+    file: 'SNS - PRO -CINC Pro-V2.2.pdf'
+  },
+
+  {
+    title: 'Transition Procedure',
+    type: 'Procedure',
+    category: 'Procedures',
+    file: 'SNS - PRO Transition Procedure V2.0.pdf'
+  },
+
+  {
+    title: 'Internal Audit Policy',
+    type: 'Policy',
+    category: 'Policies',
+    file: 'SNS - POL- Internal Audit Policy V2.0.pdf'
+  },
+
+  {
+    title: 'TNAS Policy',
+    type: 'Policy',
+    category: 'Policies',
+    file: 'SNS - POL-TNAS V3.0.pdf'
+  },
+
+  {
+    title: 'CDR Procedure',
+    type: 'Procedure',
+    category: 'Procedures',
+    file: 'SNS - PRO CDR Procedure- V3.0.pdf'
+  },
+
+  {
+    title: 'Internal Audit Procedure',
+    type: 'Procedure',
+    category: 'Procedures',
+    file: 'SNS - PRO Internal Audit Procedure 2.0.pdf'
+  },
+
+  {
+    title: 'Transition Policy',
+    type: 'Policy',
+    category: 'Policies',
+    file: 'SNS - Transition Policy V2.0.pdf'
+  },
+
+  {
+    title: 'CINC Policy',
+    type: 'Policy',
+    category: 'Policies',
+    file: 'SNS-POL-CINC Policy V2.0.pdf'
+  },
+
+  {
+    title: 'Document and Version Control Policy',
+    type: 'Policy',
+    category: 'Policies',
+    file: 'SNS-POL-Document and Version Control V1.0.pdf'
+  },
+
+  {
+    title: 'Governance Integrity Policy',
+    type: 'Policy',
+    category: 'Policies',
+    file: 'SNS-POL-Governance Integrity Policy V1.0.pdf'
+  },
+
+  {
+    title: 'Document and Version Control Procedure',
+    type: 'Procedure',
+    category: 'Procedures',
+    file: 'SNS-PRO-Document &Version Control V1.0.pdf'
+  },
+
+  {
+    title: 'Management Review Procedure',
+    type: 'Procedure',
+    category: 'Procedures',
+    file: 'SNS-PRO-Management Review Procedure V1.0.pdf'
+  }
+
 ];
 
 const pageType = document.body.dataset.pageType || 'All';
